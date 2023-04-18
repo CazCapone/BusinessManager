@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Business Manager
+{% endblock title %}
+
+{% block content %}
+
+{% include 'partials/_header.html' %}
+{% include 'partials/_alerts.html' %}
+{% include 'partials/_navbar.html' %}
+
+<h1>Pallet Pricer Results Page</h1>
+
+<div>
+    Create a table with data:
+
+    'QTY' | 'UPC' | 'DESCRIPTION' | 'RETAIL PRICE' | 
+    
+    'MIN SALE' | 'MIN % OF RETAIL' | 'AVE SALE' | 'AVE % OF RETAIL' | 'MAX SALE' | 'MAX % OF RETAIL' | 'TOTAL MIN * QTY' | 'TOTAL AVE * QTY' | 'TOTAL MAX * QTY' |
+    'HOW MANY SALES' | 'LAST SALE DATE'
+
+    TOTALS: 
+    'TOTAL MIN' | 'TOTAL AVE' | 'TOTAL MAX' | 'MIN PROFITS' | 'MIN P % OF RETAIL' | 'AVE PROFITS' | 'AVE P % OF RETAIL' | 'MAX PROFITS' | 'MAX P % OF RETAIL' |
+    'TOTAL RETAIL PRICE' | 'MIN PALLET COST' | 'AVE PALLET COST' 
+
+    'UPC MIN SALE' | 'UPC MIN % OF RETAIL' | 'UPC AVE SALE' | 'UPC AVE % OF RETAIL' | 'UPC MAX SALE' | 'UPC MAX % OF RETAIL' | 'UPC TOTAL MIN * QTY' | 'UPC TOTAL AVE * QTY' | 'UPC TOTAL MAX * QTY' |
+    'UPC HOW MANY SALES' | 'UPC LAST SALE DATE'
+    
+    TOTALS:
+    'UPC TOTAL MIN' | 'UPC TOTAL AVE' | 'UPC TOTAL MAX' | 'UPC MIN PROFITS' | 'UPC MIN P % OF RETAIL' | 'UPC AVE PROFITS' | 'UPC AVE P % OF RETAIL' | 'UPC MAX PROFITS' | 'UPC MAX P % OF RETAIL' |
+    'TOTAL RETAIL PRICE' | 'UPC MIN PALLET COST' | 'UPC AVE PALLET COST'
+
+
+{% include 'partials/_navbar.html' %}
+
+{% endblock content %}

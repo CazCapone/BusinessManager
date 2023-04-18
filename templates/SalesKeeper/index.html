@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Business Manager
+{% endblock title %}
+
+{% block content %}
+
+{% include 'partials/_header.html' %}
+{% include 'partials/_alerts.html' %}
+{% include 'partials/_navbar.html' %}
+
+<h1>Sales Keeper Main Page</h1>
+
+<h3>Here some text</h3>
+
+<div>Login</div>
+<div>Sign-up</div> 
+
+{% include 'partials/_navbar.html' %}
+
+{% endblock content %}

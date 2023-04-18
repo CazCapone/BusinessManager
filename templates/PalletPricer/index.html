@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Business Manager
+{% endblock title %}
+
+{% block content %}
+
+{% include 'partials/_header.html' %}
+{% include 'partials/_alerts.html' %}
+{% include 'partials/_navbar.html' %}
+
+<h1>Pallet Pricer Main Page</h1>
+
+<h3>Upload a manifest</h3>
+
+<div>Add a file selector</div>
+<button type="button">Submit Button</button>
+
+{% include 'partials/_navbar.html' %}
+
+{% endblock content %}
